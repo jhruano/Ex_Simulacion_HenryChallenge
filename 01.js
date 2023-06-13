@@ -12,6 +12,16 @@ function soloNumeros(array) {
 
   // Tu código aca:
 
+  var nuevoArray = [];
+  for(let i = 0; i<array.length; i++){
+    if (typeof(array[i])== "number"){ // Nota: Una forma comun de identificar que el elemento sea un numero cualquiera (entero o decimal) es usando if (typeof(variable) == "number") {}
+      nuevoArray.push(array[i]);
+
+    }
+  }
+ 
+  return nuevoArray;
+
 }
 
 // No modifiques nada debajo de esta linea //
