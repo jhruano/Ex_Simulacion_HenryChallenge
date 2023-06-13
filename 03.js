@@ -15,8 +15,15 @@ function buscarAmigo(amigos, nombre) {
 
   // Tu código aca:
   
-}
+  var amigoEncontrado = {};
 
+  for (var i = 0; i < amigos.length; i++){
+    if(amigos[i].nombre === nombre){
+      amigoEncontrado = amigos[i];
+    }
+  }
+  return amigoEncontrado;
+}
 // No modifiques nada debajo de esta linea //
 
 module.exports = buscarAmigo
