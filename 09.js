@@ -25,6 +25,16 @@ function filtrar(funcion) {
   //   return p.price >= 50;
   // }) => [{price: 100, name:'tv'}]
 
+  Array.prototype.filtrar = function(funcion){  //Nota: Siempre que se vaya a definir un nuevo método para una clase se utiliza 'prototype'
+    var filtrados = [];                         //
+
+    for( var i = 0; i < this.length; i++){      //Los arreglos vienen de la clase arrays, por eso se utiliza this
+      if(funcion(this[i])){
+        filtrados.push(this[i]);
+      }
+    }
+    return filtrados;
+  }
 };
 
 // No modifiques nada debajo de esta linea //
