@@ -15,6 +15,12 @@ function pluck(array, propiedad) {
 
   // Tu código acá:
 
+  return array.map(function(elem){return elem[propiedad]}); // Nota: No es necesario crear una nueva variable, porque .map arroja un nuevo
+                                                            // array. Ya que al iterar con los elementos de los dos objetos y une los precios
+                                                            // de los dos Ej {100, 500}
+
+
+
 }
 
 // No modifiques nada debajo de esta linea //
